@@ -67,6 +67,7 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        presenter.checkUserLogin();
         initContentView();
     }
 

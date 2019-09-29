@@ -42,6 +42,9 @@ class MainPresenter extends BasePresenter<MainView> {
         postManager = PostManager.getInstance(context);
     }
 
+    void checkUserLogin(){
+        checkAuthorization();
+    }
 
     void onCreatePostClickAction(View anchorView) {
         if (checkInternetConnection(anchorView)) {
